@@ -1,0 +1,150 @@
+.basic {
+  width: 100%;
+  color: rgb(0, 216, 144);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-top: -50px;
+}
+
+.header {
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+}
+
+.equal {
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.inputB {
+  width: 40%;
+  outline: none;
+  background: transparent;
+  border: 2px solid rgb(223, 3, 149);
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: aqua;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.inputB::placeholder {
+  font-size: 1.5rem;
+  color: aqua;
+}
+
+.input-def {
+  width: 40%;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: aqua;
+  font-size: 1.5rem;
+  border-bottom: 2px solid rgb(223, 3, 149);
+}
+
+.ans2 {
+  width: 100px;
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 3.5px 10px;
+  font-size: 1.4rem;
+  color: white;
+  background: rgb(161, 2, 87);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.ans:hover {
+  box-shadow: 2px 2px 5px rgb(53, 56, 255), -2px -2px 5px rgb(233, 11, 253);
+}
+
+.ans2:hover {
+  box-shadow: 2px 2px 5px rgb(53, 56, 255), -2px -2px 5px rgb(233, 11, 253);
+}
+
+.go-back {
+  position: absolute;
+  bottom: 5%;
+  padding: 5px 10px;
+  font-size: 1rem;
+  background: #060c34;
+  color: aqua;
+  border: 2px solid rgba(0, 255, 255, 0.719);
+  overflow: hidden;
+}
+
+@media all and (max-width: 1650px) {
+  .inputB {
+    width: 50%;
+  }
+  .input-def {
+    width: 50%;
+  }
+  .inputB::placeholder {
+    font-size: 1.4rem;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .inputB {
+    width: 60%;
+  }
+  .input-def {
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 810px) {
+  .inputB {
+    width: 80%;
+  }
+  .input-def {
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 530px) {
+  .header {
+    font-size: 1.5rem;
+  }
+  .inputB::placeholder {
+    font-size: 1rem;
+  }
+  .inputB {
+    width: 80%;
+    padding: 5px 7px;
+    font-size: 1.2rem;
+  }
+  .ans2 {
+    width: 90px;
+    padding: 3.5px 7px;
+    font-size: 1.2rem;
+    margin-right: 0px;
+  }
+
+  .btnS {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+}
+
+.hidden {
+  display: none;
+}

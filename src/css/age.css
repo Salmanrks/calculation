@@ -1,0 +1,202 @@
+.age {
+  color: rgb(0, 216, 144);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-top: -50px;
+}
+
+.header {
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+}
+
+.h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.sep-input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.label {
+  font-size: 1.5rem;
+  margin-right: 50px;
+}
+
+.input {
+  width: 37%;
+  outline: none;
+  background: transparent;
+  border: 2px solid rgb(223, 3, 149);
+  padding: 8px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  color: aqua;
+  font-size: 1.3rem;
+  border-radius: 10px;
+}
+
+.input-month {
+  width: 37%;
+  margin-left: -10px;
+  outline: none;
+  background: transparent;
+  border: 2px solid rgb(223, 3, 149);
+  padding: 8px;
+  margin-bottom: 15px;
+  color: aqua;
+  font-size: 1.3rem;
+  border-radius: 10px;
+}
+
+.input-month option {
+  color: rgb(223, 3, 149);
+  background: #060c34;
+}
+
+.btnsC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.ans {
+  width: 120px;
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 3.5px 10px;
+  font-size: 1.4rem;
+  color: white;
+  background: rgb(161, 2, 87);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.clearC {
+  margin-top: 15px;
+}
+
+.go-back {
+  position: absolute;
+  bottom: 5%;
+  padding: 5px 10px;
+  font-size: 1rem;
+  background: #060c34;
+  color: aqua;
+  border: 2px solid rgba(0, 255, 255, 0.719);
+}
+
+.age-result-line {
+  font-size: 1.8rem;
+  background: #1c1c24;
+  padding: 10px 7px;
+  box-shadow: 4px 4px 10px rgba(255, 0, 0, 0.5), -4px -4px 10px purple;
+}
+
+.age-result-line span {
+  margin: 0px 8px;
+}
+
+.years {
+  color: rgb(15, 97, 250);
+}
+
+.months {
+  color: rgb(255, 0, 179);
+}
+
+.days {
+  color: rgba(0, 219, 110, 0.87);
+}
+
+.hidden {
+  display: none;
+}
+
+@media all and (max-width: 730px) {
+  .age-result-line {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 10px 7px;
+  }
+  .years {
+    padding-top: 13px;
+  }
+  .units {
+    padding-bottom: 15px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .header {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  .ans {
+    width: 100px;
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 466px) {
+  .header {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .h2 {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .ans {
+    width: 100px;
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  .label {
+    font-size: 1.2rem;
+    margin-right: 0px;
+  }
+  .sep-input {
+    flex-flow: column wrap;
+  }
+  .input {
+    width: 52%;
+    padding: 6px;
+    font-size: 1rem;
+  }
+
+  .input-month {
+    width: 52%;
+    margin-left: 9px;
+    padding: 6px;
+    font-size: 1rem;
+  }
+}

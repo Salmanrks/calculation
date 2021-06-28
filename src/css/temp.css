@@ -1,0 +1,154 @@
+.temp {
+  color: rgb(0, 216, 144);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-top: -50px;
+}
+
+.header {
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+}
+
+.h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.sep-input2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.input2 {
+  width: 62%;
+  outline: none;
+  /* border: none; */
+  background: transparent;
+  border: 2px solid rgb(223, 3, 149);
+  padding: 8px;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  color: aqua;
+  font-size: 1.3rem;
+  border-radius: 10px;
+}
+
+.input2 option {
+  color: rgb(223, 3, 149);
+  background: #060c34;
+}
+
+.ex-input::placeholder {
+  color: aqua;
+  font-size: 1.3rem;
+}
+
+.Tresfield::placeholder {
+  color: aqua;
+  font-size: 1.3rem;
+}
+
+.input-temp {
+  width: 16%;
+}
+
+.ansT {
+  width: 120px;
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 3.5px;
+  font-size: 1.4rem;
+  color: white;
+  background: rgb(161, 2, 87);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.reset {
+  margin-left: 10px;
+}
+
+.equal {
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media all and (max-width: 800px) {
+  .header {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  .ans {
+    width: 100px;
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 482px) {
+  .header {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  .ansT {
+    width: 100px;
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  .input2 {
+    width: 54%;
+    padding: 6px;
+    font-size: 1rem;
+  }
+  .input-temp {
+    width: 25%;
+  }
+}
+
+@media all and (max-width: 345px) {
+  .header {
+    font-size: 1.2rem;
+  }
+
+  .h2 {
+    font-size: 1rem;
+  }
+  .tBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+  .reset {
+    margin-left: 0px;
+  }
+}

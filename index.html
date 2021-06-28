@@ -1,0 +1,145 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculation</title>
+    <link rel="stylesheet" href="./src/css/home.css"/>
+    <link rel="stylesheet" href="./src/css/basic.css">
+    <link rel="stylesheet" href="./src/css/age.css">
+    <link rel="stylesheet" href="./src/css/temp.css">
+    <script defer src="./src/js/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- home page -->
+      <div class="home">
+        <h1>Welcome to the Calculation App!!</h2>
+        <h2>Please Select an Option to Continue..</h2>   
+        <div class="options">
+            <p><button class="basic-btn">> Basic Calculator</button></p>
+            <p><button class="age-btn">> Age Calculator</button></p>
+            <p><button class="temp-btn">> Temperature Converter</button></p>
+        </div>
+      </div>
+      <!-- basic calculator page -->
+      <div class="basic hidden">
+        <h1 class = "header">Basic Calculator</h1>
+        <form class = "form" action="#" autocomplete="off">
+            <label for="input"></label>
+            <input type="text" name="input" id="input" class="inputB" placeholder="Input Here..">
+            <div class="btnS">
+              <button class="ans2">Ans</button>
+              <button class="ans2 clear1">Clear</button>
+            </div>
+        </form>
+        <button class="go-back go-back-basic">Back to Home</button>
+      </div>
+      <!-- answer page -->
+      <div class="basic basic-result hidden">
+        <h1 class = "header">Basic Calculator</h1>
+        <div class = "input-def">12+3</div>
+        <h1 class = "header equal">=</h1>
+        <form class = "form" action="#" autocomplete="off">
+            <label for="input"></label>
+            <input type="text" name="input" id="input" class="inputB Rinput">
+            <div class="btnS">
+              <button class="ans2 ans2-res">Ans</button>
+              <button class="ans2 clear2">Clear</button>
+            </div>
+        </form>
+        <button class="go-back go-back-ans">Back to Home</button>
+      </div>
+      <!-- age calculator page -->
+      <div class="age hidden">
+        <h1 class = "header">Age Calculator</h1>
+        <h2 class = "h2">Please Input Your Birth-Date..</h2>   
+
+        <form class = "form" action="#" autocomplete="off">
+          <div class="sep-input">
+            <label class="label" for="input">Day</label>
+            <input type="text" name="input" id="input" class="input input-day">
+          </div>
+
+          <div class="sep-input">
+            <label class="label" for="input">Month</label>
+            <select name="input" id="input" class="input-month">
+              <option value=""></option>
+              <option value="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+          </div>
+
+          <div class="sep-input">
+            <label class="label" for="input">Year</label>
+            <input type="text" name="input" id="input" class="input input-year">
+          </div>
+
+          <div class="btnsC">
+            <button class="ans calcAge">Calculate</button>
+            <button class="ans clearC">Clear</button>
+          </div>
+          
+        </form>
+        <button class="go-back go-back-age">Back to Home</button>
+      </div>
+      <!-- age calculator result -->
+      <div class="age age-result hidden">
+        <h1 class = "header">Age Calculator</h1>
+        <p class= "age-result-line">
+          Your Age is 
+          <span class="years units">0 Years</span> 
+          <span class="months units">0 Months</span> 
+          <span class="days units">0 Days</span> 
+        </p>
+        <button class="go-back back-to-age">Back</button>
+      </div>
+      <!-- temperature converter  -->
+      <div class="temp hidden">
+        <h1 class = "header">Temperature Converter</h1>
+        <h2 class = "h2">Please Select a Conversion..</h2>   
+
+        <form class = "form" action="#" autocomplete="off">
+          <div class="sep-input2">
+            <input type="text" name="input" id="input" class="input2 ex-input" placeholder="1">
+            <select name="input" id="input" class="input2 input-temp from">
+              <option value="c"><span>&#8451;</span></option>
+              <option value="f"><span>&#8457;</span></option>
+              <option value="k"><span>&#8490;</span></option>
+            </select>
+          </div>
+
+          <h1 class = "header equal">=</h1>
+
+          <div class="sep-input2">
+            <input type="text" name="input" id="input" class="input2 Tresfield" placeholder="1">
+            <select name="input" id="input" class="input2 input-temp to">
+              <option value="c"><span>&#8451;</span></option>
+              <option value="f"><span>&#8457;</span></option>
+              <option value="k"><span>&#8490;</span></option>
+            </select>
+            <div class="tBtns">
+              <button class="ansT convert">Convert</button>
+              <button class="ansT reset">Reset</button>
+            </div>
+          </div>
+        </form>
+        
+        <button class="go-back go-back-convert">Back to Home</button>
+      </div>
+    </div>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+  </body>
+</html>
