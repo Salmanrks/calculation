@@ -87,6 +87,10 @@ body {
   flex-flow: column wrap;
 }
 
+.home .options p {
+  text-align: center;
+}
+
 .home .options p button {
   background: transparent;
   color: aqua;
@@ -133,6 +137,8 @@ body {
   .box2 {
     width: 70px;
     height: 70px;
+    bottom: 8%;
+    right: 8%;
   }
 }
 
