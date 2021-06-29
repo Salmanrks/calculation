@@ -82,6 +82,10 @@
   border-radius: 5px;
 }
 
+.ansT:hover {
+  box-shadow: 2px 2px 5px rgb(53, 56, 255), -2px -2px 5px rgb(233, 11, 253);
+}
+
 .reset {
   margin-left: 10px;
 }
